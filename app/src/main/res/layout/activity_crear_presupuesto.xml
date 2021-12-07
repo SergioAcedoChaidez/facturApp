@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CrearPresupuesto">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+
+            <androidx.appcompat.widget.Toolbar
+
+                android:id="@+id/btn_CrearFacturaAppBar"
+                android:layout_width="match_parent"
+                app:title="@string/presupuesto"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white">
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dmnArticulo"
+                    android:hint="@string/nombre_de_factura"
+                    android:textColorHint="@color/black"
+                    app:boxStrokeColor="@color/black"
+                    app:boxStrokeWidthFocused="2dp"
+                    app:endIconMode="clear_text"
+                    app:startIconTint="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:maxLength="150"
+                        android:id="@+id/et_NumFactura"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="text"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_gravity="center">
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical">
+
+
+                <Button
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                    app:icon="@drawable/ic_baseline_account_box_24"
+                    android:id="@+id/btn_anadirCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/GrisButon"
+                    android:text="@string/a_adir_cliente"
+                    android:textAllCaps="false"/>
+
+                <TextView
+                    android:id="@+id/tv_NombreCliente"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="textStart"
+                    android:text="@string/cliente"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:background="?android:attr/listDivider" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:clickable="true"
+                android:id="@+id/rvArticulos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                app:icon="@drawable/ic_add"
+                android:id="@+id/btnAnadirArticulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/GrisButon"
+                android:text="@string/anadir_articulos"
+                android:layout_margin="5dp"
+                android:textAllCaps="false" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider"
+                android:layout_margin="5dp"
+                />
+            <Button
+                android:id="@+id/btn_totalParcial"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/GrisButon"
+                android:clickable="false"
+                android:text="@string/total_parcial"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                app:icon="@drawable/ic_baseline_attach_money_24" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:background="?android:attr/listDivider" />
+
+            <LinearLayout
+                android:clickable="true"
+                android:id="@+id/LLDatosFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_gravity="center">
+
+
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Descuento"/>
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:id="@+id/tv_Descuento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_0_00"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Envío"/>
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:id="@+id/tv_Envio"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/_0_00"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Impuesto"/>
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_impuestos"
+                        android:text="@string/_0_00"/>
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Total"/>
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_total_antes_pago"
+                        android:text="@string/_0_00"/>
+
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pagado"/>
+                    <TextView
+                        android:padding="@dimen/PadEt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_Pagado"
+                        android:text="@string/_0_00"/>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_margin="10dp"
+                android:background="?android:attr/listDivider" />
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/GrisButon"
+                android:clickable="false"
+                android:text="@string/saldo_adeudado"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:id="@+id/btn_SaldoAdeudado"
+                app:icon="@drawable/ic_baseline_attach_money_24" />
+            <Button
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+
+                android:id="@+id/btnOpcionesdePago"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/GrisButon"
+                android:drawableEnd="@drawable/ic_baseline_payments_24"
+                android:text="@string/opciones_de_pago_transferencia_bancaria_paypal_etc"
+                android:layout_margin="5dp"
+                android:textAllCaps="false" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/black"
+                app:boxStrokeColor="@color/black"
+                app:boxStrokeWidthFocused="2dp"
+                app:startIconTint="@color/black"
+                app:endIconMode="clear_text"
+                android:layout_margin="@dimen/dmnArticulo"
+                android:hint="@string/notas_adicionales"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/black"
+                    android:id="@+id/et_NotasaAdicionales"
+                    android:inputType="text"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <Button
+                android:id="@+id/btn_GuardarFactura"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/GrisButon"
+                android:clickable="true"
+
+                android:text="@string/presupuesto"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>
+

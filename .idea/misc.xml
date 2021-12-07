@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/buttontabbar.xml" value="0.15" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/circleackground.xml" value="0.2703125" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_add.xml" value="0.2703125" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_baseline_account_box_24.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_baseline_mood_bad_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_boton.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_email.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_eye.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/drawable/ic_field.xml" value="0.24351851851851852" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout-land/activity_main.xml" value="0.21208112874779542" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_ajustes.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_anadir_articulo.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_cliente.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_crear_factura.xml" value="0.25098039215686274" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_crear_presupuesto.xml" value="0.33" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_datos_empresa.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_datos_factura.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_forgot_password.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_informacion.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_iniciar_sesion.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_instrucciones_pago.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_maps.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_menu_principal.xml" value="0.2" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_nuevo_cliente.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_payment_options.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/activity_registro_usuario.xml" value="0.2" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/item_articulo.xml" value="0.264" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/item_factura.xml" value="0.4" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/menupopup.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/layout/nav_headder.xml" value="0.536" />
+        <entry key="..\:/Users/acedo/OneDrive/Documents/facutrapp/app/src/main/res/menu/nav_menu.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

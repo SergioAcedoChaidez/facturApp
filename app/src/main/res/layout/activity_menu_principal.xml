@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/main_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/white"
+                    app:title="@string/Menuprincipal" />
+
+                <LinearLayout
+                    style="@style/buttonRow">
+
+                    <Button
+                        android:id="@+id/btnTodo"
+                        android:backgroundTint="@color/white"
+                        style="@style/buttonNumber"
+                        android:text="@string/todo"
+                        android:textColor="@color/black"
+                        ></Button>
+
+                    <Button
+
+                        android:backgroundTint="@color/white"
+                        android:id="@+id/btnPendiente"
+                        android:text="@string/pendiente"
+                        style="@style/buttonNumber"
+                        android:textColor="@color/black"
+
+                        ></Button>
+
+
+                    <Button
+                        android:id="@+id/btn_Pagado"
+                        android:text="@string/pagado"
+
+                        android:backgroundTint="@color/white"
+                        style="@style/buttonNumber"></Button>
+
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_Facturas"
+            android:layout_width="match_parent"
+            android:layout_height="527dp"
+            app:layout_anchor="@+id/viewpager"
+            app:layout_anchorGravity="center"
+            tools:listitem="@layout/item_factura" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="8dp"
+            android:backgroundTint="#AC9D9D"
+            android:src="@drawable/ic_add">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_headder"
+        app:menu="@menu/nav_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

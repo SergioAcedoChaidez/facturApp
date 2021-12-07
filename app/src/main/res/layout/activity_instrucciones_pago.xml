@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".instruccionesPago"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_24" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@id/left_icon"
+            android:text="@string/instrucciones_de_pago"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_baseline_settings_24" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_emailpaypa2"
+        android:layout_width="407dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#808080"
+        android:text="@string/email_de_paypal"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+
+    <EditText
+        android:id="@+id/edt_nombreempresa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:ems="10"
+        android:hint="@string/usted_o_el_nombre_de_su_empresa"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_transferencia"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emailpaypa2"
+        tools:ignore="DuplicateIds,MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_cheques"
+        android:layout_width="407dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="52dp"
+        android:backgroundTint="#808080"
+        android:text="@string/haz_los_cheques_a_nombre_de"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/edt_nombreempresa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emailpaypa2"
+        app:layout_constraintVertical_bias="0.481"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/edt_correopaypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/introduzca_su_correo_electronico_de_paypal"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btn_cheques"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emailpaypa2"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/btn_transferencia"
+        android:layout_width="407dp"
+        android:layout_height="42dp"
+        android:backgroundTint="#808080"
+        android:text="@string/transferencia_bancaria"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumber2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:ems="10"
+        android:hint="@string/instrucciones_de_pago_adicionales"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emailpaypa2"
+        app:layout_constraintVertical_bias="0.938"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btn_emailpaypal"
+        android:layout_width="407dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="56dp"
+        android:backgroundTint="#808080"
+        android:text="@string/otros"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="308dp"
+        android:ems="10"
+        android:hint="@string/numeros_de_cuentas_bancarias_y_otros_detalles"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_emailpaypal"
+        app:layout_constraintTop_toBottomOf="@+id/btn_emailpaypa2"
+        tools:layout_editor_absoluteX="-16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

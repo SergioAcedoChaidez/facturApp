@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "583619814746",
+    "project_id": "facturapp-96160",
+    "storage_bucket": "facturapp-96160.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583619814746:android:b08021358ca2b5aa0b7f63",
+        "android_client_info": {
+          "package_name": "acedo.sergio.facturapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583619814746-9tc4v72qr9s4gib0ksfsar8unjgnkoth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "acedo.sergio.facturapp",
+            "certificate_hash": "11cbffd2ec89b2934f4093e3fa106e8ecc248c98"
+          }
+        },
+        {
+          "client_id": "583619814746-9rlbc94emiannsorokqhnegta89a5qhb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKArApw5G5eieYQksCgoXOa3pcXyvdaDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583619814746-9rlbc94emiannsorokqhnegta89a5qhb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

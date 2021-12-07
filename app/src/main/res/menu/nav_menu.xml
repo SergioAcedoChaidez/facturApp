@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:title="Editar datos">
+        <menu>
+            <item android:title="@string/detalles_de_empresa"
+                android:id="@+id/itemDetallesEmpresa"
+                android:icon="@drawable/ic_baseline_business_24"/>
+            <item android:title="Perfil"
+                android:id="@+id/itemConfig"
+                android:icon="@drawable/ic_baseline_account_box_24"/>
+        </menu>
+    </item>
+
+
+    <item android:title="Ajustes">
+        <menu>
+
+            <item android:title="@string/informacion_del_programa"
+                android:id="@+id/itemInfo"
+                android:icon="@drawable/ic_baseline_info_24"/>
+            <item android:title="@string/cerrar_sesion"
+                android:id="@+id/item_Logout"
+                android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+
+        </menu>
+    </item>
+</menu>
